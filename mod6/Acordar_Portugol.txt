@@ -1,0 +1,31 @@
+1. Abrir os olhos
+2. Olhar o celular
+3. Pegar o celular
+4. Desligar o alarme
+5. Me destapar
+6. Sentar na cama com os pés para fora
+7. Colocar os chinelos
+8. Levantar
+9. Se frio
+  9.1: Separar roupas de frio
+10. Se não estiver frio
+  10.1: Separar roupas normais
+11. Ir ao banheiro
+12. Tirar roupas
+13. Tomar banho 
+14. Se secar
+15. Vestir roupas separadas
+16. Ir à cozinha
+17. Pegar caneca
+18. Servir café
+19. Esquentar café
+20. Tomar café
+21. Colocar caneca na pia
+22. Ir para sala
+23. Pegar carteira
+24. Pegar fones de ouvido
+25. Pegar chaves
+26. Ir para o quarto
+27. Pegar o celular
+28. Ir para sala
+29. Ir até a porta
