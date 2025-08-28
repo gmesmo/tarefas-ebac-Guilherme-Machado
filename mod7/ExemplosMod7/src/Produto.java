@@ -1,4 +1,4 @@
-package PACKAGE_NAME;
-
 public class Produto {
+    private int codigo;
+    private String nome;
 }
