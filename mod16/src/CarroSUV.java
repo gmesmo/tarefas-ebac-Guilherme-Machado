@@ -1,21 +1,21 @@
-public class CarroEsportivo extends Carro{
-    private int potencia;
+public class CarroSUV extends Carro{
+    private int capacidadeCarga;
 
-    public CarroEsportivo(String marca, String modelo, int ano, String cor, int potencia) {
+    public CarroSUV(String marca, String modelo, int ano, String cor, int capacidadeCarga) {
         super(marca, modelo, ano, cor);
-        this.potencia = potencia;
+        this.capacidadeCarga = capacidadeCarga;
     }
 
-    public int getPotencia() {
-        return potencia;
+    public int getCapacidadeCarga() {
+        return capacidadeCarga;
     }
 
-    public void setPotencia(int potencia) {
-        this.potencia = potencia;
+    public void setCapacidadeCarga(int capacidadeCarga) {
+        this.capacidadeCarga = capacidadeCarga;
     }
 
     @Override
     public String toString() {
-        return super.toString() + ", Potência: " + potencia + "HP";
+        return super.toString() + ", Capacidade de carga: " + capacidadeCarga + "HP";
     }
 }
