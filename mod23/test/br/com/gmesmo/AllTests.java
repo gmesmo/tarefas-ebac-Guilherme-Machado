@@ -1,4 +1,4 @@
-package br.com.gmesmo.testes;
+package br.com.gmesmo;
 
 
 import org.junit.runner.RunWith;

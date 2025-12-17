@@ -1,4 +1,4 @@
-package br.com.gmesmo.testes;
+package br.com.gmesmo;
 
 import br.com.gmesmo.TesteCliente;
 import org.junit.Assert;
