@@ -1,6 +1,7 @@
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
 public class AppReflections {
 
@@ -21,7 +22,35 @@ public class AppReflections {
 
             Field[] fields = prod1.getClass().getDeclaredFields();
             for (Field field : fields) {
-                field.get
+                Class<?> type = field.getType();
+                String nome = field.getName();
+                System.out.println(type);
+                System.out.println(nome);
+            }
+
+            Method[] methods = prod1.getClass().getDeclaredMethods();
+            for (Method m : methods) {
+                Class<?> type = m.getReturnType();
+                String nome = m.getName();
+                System.out.println(type);
+                System.out.println(nome);
+
+                System.out.println("Executando métodos");
+
+                if(m.getName().startsWith("get")) {
+                    System.out.println(m.invoke(prod1));
+                } else {
+                    for (Class classesTypes : m.getParameterTypes()) {
+                        if(classesTypes.equals(String.class)) {
+                            System.out.println(m.invoke(prod1, "Guilherme"));
+                        } else if(classesTypes.equals(Long.class)) {
+                            System.out.println(m.invoke(prod1, 1l));
+                        } else {
+                            System.out.println(m.invoke(prod1, 2d));
+                        }
+                    }
+
+                }
             }
 
 

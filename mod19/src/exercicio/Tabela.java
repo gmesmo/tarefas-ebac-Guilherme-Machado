@@ -1,3 +1,5 @@
+package exercicio;
+
 import java.lang.annotation.*;
 
 @Documented
