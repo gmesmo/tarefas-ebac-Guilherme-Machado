@@ -1,6 +1,7 @@
 import java.util.*;
+import java.util.stream.Collectors;
 
-public class Colecoes2_2 {
+public class Exercicio {
     public static void main (String[] args) {
         Scanner scanner = new Scanner(System.in);
         String pessoas;
@@ -8,21 +9,19 @@ public class Colecoes2_2 {
         System.out.println("Informe as pessoas separadas por vírgula, com sexo após o traço (Ex.: Guilherme-M,Judy-F): ");
         pessoas = scanner.nextLine();
 
-        List<String> listaM = new ArrayList<>();
-        List<String> listaF = new ArrayList<>();
-
         String[] ArrayPessoas = pessoas.split(",");
 
-        for (int i = 0; i < ArrayPessoas.length; i++) {
-            if (ArrayPessoas[i].endsWith("M")) {
-                listaM.add(ArrayPessoas[i].substring(0, ArrayPessoas[i].length() - 2));
-            } else if (ArrayPessoas[i].endsWith("F")) {
-                listaF.add(ArrayPessoas[i].substring(0, ArrayPessoas[i].length() - 2));
-            }
-        }
+        List<String> listaM = Arrays.stream(ArrayPessoas)
+                                    .filter(pessoa -> pessoa.endsWith("M"))
+                                    .map(pessoa -> pessoa.substring(0, pessoa.length() -2))
+                                    .sorted()
+                                    .collect(Collectors.toList());
 
-        Collections.sort(listaM);
-        Collections.sort(listaF);
+        List<String> listaF = Arrays.stream(ArrayPessoas)
+                .filter(pessoa -> pessoa.endsWith("F"))
+                .map(pessoa -> pessoa.substring(0, pessoa.length() -2))
+                .sorted()
+                .collect(Collectors.toList());
 
         System.out.println("Homens\n");
         System.out.println(listaM);
