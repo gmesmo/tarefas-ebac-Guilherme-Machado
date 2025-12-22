@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="CadastroCliente/src"/>
+	<classpathentry kind="src" path="mod10/src"/>
+	<classpathentry kind="src" path="mod11/src"/>
+	<classpathentry kind="src" path="mod12/src"/>
+	<classpathentry kind="src" path="mod13/src"/>
+	<classpathentry kind="src" path="mod15/src"/>
+	<classpathentry kind="src" path="mod17/src"/>
+	<classpathentry kind="src" path="mod18/src"/>
+	<classpathentry kind="src" path="mod19/src"/>
+	<classpathentry kind="src" path="mod22/src"/>
+	<classpathentry kind="src" path="mod23/src"/>
+	<classpathentry kind="src" path="mod23/test"/>
+	<classpathentry kind="src" path="mod24/src"/>
+	<classpathentry kind="src" path="mod24/test"/>
+	<classpathentry kind="src" path="mod5/PrimeiroProjeto/src"/>
+	<classpathentry kind="src" path="mod7/ExemplosMod7/src"/>
+	<classpathentry kind="src" path="mod7/Tarefa_Classes/src"/>
+	<classpathentry kind="src" path="mod8/src"/>
+	<classpathentry kind="src" path="mod9/src"/>
+	<classpathentry kind="output" path="mod5/PrimeiroProjeto/out/production/PrimeiroProjeto"/>
+</classpath>
